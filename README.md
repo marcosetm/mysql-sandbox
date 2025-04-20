@@ -4,7 +4,7 @@ Sandbox for MySQL.
 ### Running
 Copy `dev.env` to `.env`
 ```bash
-cp dev.env .evn
+cp dev.env .env
 ```
 Update your `root` user password in `.env`
 ```
