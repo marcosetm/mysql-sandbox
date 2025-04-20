@@ -1,14 +1,14 @@
 services:
   mysql-db:
     container_name: mysql-db
-    image: mysql:latest
+    image: mysql:8.0
     restart: always
     env_file: 
       - .env
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
-      - "./data:/var/lib/mysq"
+      - ./data:/var/lib/mysql:rw
     ports:
       - "3306:3306"
 
