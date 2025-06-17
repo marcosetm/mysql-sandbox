@@ -2,7 +2,7 @@ services:
   mysql-db:
     container_name: mysql-db
     image: mysql:8.0
-    restart: always
+    restart: no
     env_file: 
       - .env
     environment:
